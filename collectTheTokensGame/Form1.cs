@@ -24,8 +24,8 @@ namespace collectTheTokensGame
         Timer timer = new Timer();
         token[] redTokens = new token[50];
         token blueToken;
-        Bitmap redImage = new Bitmap(@"H:\2020\13CSC\3.7computerProgram\Tasks\collectTheTokensGame\redCircle.png");
-        Bitmap blueImage = new Bitmap(@"H:\2020\13CSC\3.7computerProgram\Tasks\collectTheTokensGame\blueCircle.png");
+        Bitmap redImage = new Bitmap(@"../../../redCircle.png");
+        Bitmap blueImage = new Bitmap(@"../../../blueCircle.png");
 
         private void Form1_Load(object sender, EventArgs e)
         {

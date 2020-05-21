@@ -28,9 +28,9 @@ namespace collectTheTokensGame
             }
             else
             {
-                //string pathUsername = @"H:\2020\13CSC\3.7computerProgram\Tasks\collectTheTokensGame\gameNames.txt";
+                string pathUsername = @"../../../gameNames.txt";
                 string username = txtName.Text;
-                string[] readUsername = System.IO.File.ReadAllLines("gameNames.txt");
+                string[] readUsername = File.ReadAllLines(pathUsername);
                 for (int i = 0; i < readUsername.Length; i++)
                 {
                     if (readUsername[i] == username)
@@ -41,7 +41,7 @@ namespace collectTheTokensGame
                 }
                 if (check == 0)
                 {
-                    System.IO.File.AppendAllText("gameNames.txt", username + "\r\n");
+                    File.AppendAllText(pathUsername, username + "\r\n");
                     MessageBox.Show("Good luck for your first game " + username + "!");
                     check++;
                 }
